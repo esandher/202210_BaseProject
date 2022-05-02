@@ -1,0 +1,34 @@
+<div class="container-fluid">
+  <h5>El aroma mágico</h5>
+<hr>
+<img src="./assets/cafe.jpg" alt="">
+<hr>
+  <div class="col-6">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col"> Nombre</th>
+          <th scope="col">Tipo</th>
+          <th scope="col">Región</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let exhibition of Cafes">
+          <td>
+            <dd>{{exhibition.id}}</dd>
+          </td>
+          <td>
+            <dd>{{exhibition.nombre}}</dd>
+          </td>
+          <td>
+            <dd>{{exhibition.tipo}}</dd>
+          </td>
+          <td>
+            <dd>{{exhibition.region}}</dd>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
